@@ -29,7 +29,7 @@
               <div class="absolute inset-0 bg-gradient-to-r from-primary-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
             <button class="group border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-xl font-semibold hover:border-primary-500 dark:hover:border-primary-400 transition-all duration-300 transform hover:scale-105">
-              <a href="/src/assets/CV_TINA_Anil_Dama.pdf" class="relative">Télécharger CV</a>
+              <a href="/src/assets/CV_Tina_Anil_Dama.pdf" class="relative">Télécharger CV</a>
             </button>
           </div>
         </div>
