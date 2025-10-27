@@ -65,6 +65,7 @@ const skills = [
     items: [
       { name: 'Python', level: 90 },
       { name: 'Django', level: 80 },
+      { name: 'Node.js', level: 75 },
       { name: 'MySql', level: 75 },
       {name: 'PostgreSQL', level: 70},
       { name: 'API REST', level: 88 }
@@ -75,8 +76,9 @@ const skills = [
     emoji: '🚀',
     items: [
       { name: 'Git/GitHub', level: 90 },
-      { name: 'Docker', level: 65 },
-      
+      { name: 'Gitlab', level: 80 },
+      { name: 'Figma', level: 60 },
+
     ]
   }
 ]

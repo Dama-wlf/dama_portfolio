@@ -34,16 +34,7 @@
               {{ project.description }}
             </p>
             
-            <!-- Technologies utilisées -->
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span 
-                v-for="tech in project.technologies" 
-                :key="tech"
-                class="px-3 py-1 bg-primary-500/10 text-primary-600 dark:text-primary-400 text-sm rounded-full border border-primary-500/20"
-              >
-                {{ tech }}
-              </span>
-            </div>
+           
             
            
           </div>
@@ -63,28 +54,24 @@ const projects = [
     id: 1,
     title: 'Application Web SCRUMORA',
     description: 'Plateforme web de géstion de projets avec méthodologie Scrum, intégrant gestion des tâches',
-    technologies: ['Vue.js', 'Django', 'PostgreSQL'],
    
   },
   {
     id: 2,
     title: 'Application de gestion scolaire',
     description: "Création d’une application web pour la gestion administrative d’un établissement scolaire",
-    technologies: ['Vue.js', 'Django', 'PostgreSQL'],
    
   },
   {
     id: 3,
     title: 'Application Mobile E-Karama',
     description: "Développement d'une application mobile innovante facilitant la recherche d'offres d'emploi pour les utilisateurs",
-    technologies: ['Flutter', 'Django', 'MySQL'],
    
   },
   {
     id: 4,
     title: "Site web de réservetion d'Hôtel",
     description: "Conception et mise en œuvre d'une plateforme de réservation d'hôtels en ligne.",
-    technologies: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
    
   },
   
@@ -92,14 +79,12 @@ const projects = [
     id: 5,
     title: 'Application de traduction Anglais - Malgache',
     description: "Conception et développement d'une application dédiée à la traduction entre l'anglais et le malgache",
-    technologies: ['Python'],
    
   },
   {
     id: 6,
     title: "Application desktop d'extraction de mots-clés",
     description: "Une application desktop permettant de rechercher un mot-clé dans un texte et d’en extraire le mot essentiel",
-    technologies: ['C#', '.NET'],
   
   }
 ]
