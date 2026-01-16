@@ -68,7 +68,7 @@ const skills = [
       { name: 'Node.js', level: 75 },
       { name: 'MySql', level: 75 },
       {name: 'PostgreSQL', level: 70},
-      { name: 'API REST', level: 88 }
+      { name: 'MongoDB', level: 88 }
     ]
   },
   {
