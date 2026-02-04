@@ -1,6 +1,5 @@
 <template>
   <section id="home" class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-blue-900/20 dark:to-indigo-900/20 relative overflow-hidden">
-    <!-- Background decoration -->
     <div class="absolute inset-0 overflow-hidden">
       <div class="absolute -top-40 -right-32 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
       <div class="absolute -bottom-40 -left-32 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-float" style="animation-delay: 1.5s;"></div>
@@ -8,7 +7,6 @@
     
     <div class="container mx-auto px-4 sm:px-6 relative z-10">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Texte -->
         <div class="text-center lg:text-left space-y-6 animate-slide-in-left">
           <div class="space-y-4">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
@@ -40,7 +38,6 @@
             <!-- Cercle décoratif -->
             <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-purple-600 rounded-full blur-lg opacity-30 animate-pulse-slow"></div>
             
-            <!-- Container photo -->
             <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-white dark:bg-gray-800 p-2 shadow-2xl transform hover:scale-105 transition-transform duration-500">
               <img 
                 src="/src/assets/anil.JPG" 
@@ -49,9 +46,8 @@
               />
             </div>
             
-            <!-- Badge animé -->
             <div class="absolute -bottom-4 -right-4 bg-gradient-to-r from-primary-500 to-purple-600 text-white px-4 py-2 rounded-full font-semibold shadow-lg animate-bounce-gentle">
-              🚀 Disponible
+            Disponible
             </div>
           </div>
         </div>
@@ -60,6 +56,3 @@
   </section>
 </template>
 
-<script setup>
-// Aucune logique nécessaire pour le moment
-</script>

@@ -3,10 +3,10 @@ import Home from '../views/Home.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/dama_portfolio/',
     name: 'Home',
-    component: Home
-  },
+    component: Home,
+  }
   
 ]
 

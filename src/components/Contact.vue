@@ -28,7 +28,7 @@
               class="flex items-center p-4 rounded-2xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               <div class="w-12 h-12 rounded-full bg-primary-500/10 flex items-center justify-center mr-4">
-                <span class="text-2xl">{{ contact.emoji }}</span>
+                <component :is="contact.icon" class="w-6 h-6 text-primary-500" />
               </div>
               <div>
                 <h4 class="font-semibold text-gray-900 dark:text-white">{{ contact.type }}</h4>
@@ -41,7 +41,6 @@
           <div class="pt-6">
             <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Suivez-moi</h4>
            <div class="flex space-x-4">
-              <!-- LinkedIn -->
               <a 
                 href="https://www.linkedin.com/in/anil-dama-tina-5b1056310/" 
                 class="w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-600 group"
@@ -52,7 +51,6 @@
                 </svg>
               </a>
 
-              <!-- Facebook -->
               <a 
                 href="https://facebook.com/anilschanone.dama" 
                 class="w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-500 group"
@@ -63,7 +61,6 @@
                 </svg>
               </a>
 
-              <!-- GitHub -->
               <a 
                 href="https://github.com/Dama-wlf" 
                 class="w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-800 group"
@@ -138,7 +135,6 @@
               ></textarea>
             </div>
             
-            <!-- Message de statut -->
             <div v-if="statusMessage" :class="statusClass" class="p-4 rounded-lg">
               {{ statusMessage }}
             </div>
@@ -167,6 +163,8 @@
 <script setup>
 import { ref } from 'vue'
 import emailjs from 'emailjs-com'
+import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/vue/24/solid'
+
 const statusMessage = ref('')
 const statusClass = ref('')
 const isSubmitting = ref(false)
@@ -179,10 +177,9 @@ const form = ref({
 })
 
 const contactMethods = [
-  { type: 'Email', value: 'damaanil1504@gmail.com', emoji: '📧' },
-  { type: 'Téléphone', value: '+261 32 53 948 38 / +261 34 58 850 81', emoji: '📱' },
-  { type: 'Localisation', value: 'Antsirabe, Madagascar', emoji: '📍' },
-  { type: 'Disponibilité', value: 'Disponible pour de nouveaux projets', emoji: '✅' }
+  { type: 'Email', value: 'damaanil1504@gmail.com', icon: EnvelopeIcon },
+  { type: 'Téléphone', value: '+261 32 53 948 38 / +261 34 58 850 81', icon: PhoneIcon },
+  { type: 'Localisation', value: 'Antsirabe, Madagascar', icon: MapPinIcon },
 ]
 const EMAILJS_CONFIG = {
   SERVICE_ID: 'service_clo0us2',  
@@ -205,7 +202,7 @@ const handleSubmit = async () => {
         from_email: form.value.email,
         subject: form.value.subject,
         message: form.value.message,
-        to_email: 'damaanil1504@gmail.com' // Votre email de réception
+        to_email: 'damaanil1504@gmail.com' 
       },
       EMAILJS_CONFIG.USER_ID
     )
@@ -214,7 +211,6 @@ const handleSubmit = async () => {
       statusMessage.value = '✅ Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.'
       statusClass.value = 'bg-green-100 text-green-700 border border-green-200'
       
-      // Réinitialiser le formulaire
       form.value = { name: '', email: '', subject: '', message: '' }
     }
   } catch (error) {
@@ -224,7 +220,6 @@ const handleSubmit = async () => {
   } finally {
     isSubmitting.value = false
     
-    // Effacer le message après 5 secondes
     setTimeout(() => {
       statusMessage.value = ''
     }, 5000)
