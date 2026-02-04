@@ -3,7 +3,7 @@
     <nav class="container mx-auto px-4 sm:px-6 py-4">
       <div class="flex justify-between items-center">
         <!-- Logo -->
-        <router-link to="/" class="text-2xl font-bold text-primary-600 dark:text-primary-400 transition-colors hover:scale-105">
+        <router-link to="/dama_portfolio/" class="text-2xl font-bold text-primary-600 dark:text-primary-400 transition-colors hover:scale-105">
           TINA Anil Dama
         </router-link>
         
