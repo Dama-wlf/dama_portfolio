@@ -179,7 +179,7 @@ const form = ref({
 const contactMethods = [
   { type: 'Email', value: 'damaanil1504@gmail.com', icon: EnvelopeIcon },
   { type: 'Téléphone', value: '+261 32 53 948 38 / +261 34 58 850 81', icon: PhoneIcon },
-  { type: 'Localisation', value: 'Antsirabe, Madagascar', icon: MapPinIcon },
+  { type: 'Localisation', value: 'Antananarivo, Madagascar', icon: MapPinIcon },
 ]
 const EMAILJS_CONFIG = {
   SERVICE_ID: 'service_clo0us2',  

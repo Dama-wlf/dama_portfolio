@@ -103,7 +103,7 @@ const personalInfo = [
   { label: 'Nom', value: 'TINA Anil Dama', icon: UserIcon },
   { label: 'Email', value: 'damaanil1504@gmail.com', icon: EnvelopeIcon },
   { label: 'Téléphone', value: '+261 32 53 948 38 / +261 34 58 850 81', icon: PhoneIcon },
-  { label: 'Localisation', value: 'Antsirabe, Madagascar', icon: MapPinIcon },
+  { label: 'Localisation', value: 'Antananarivo, Madagascar', icon: MapPinIcon },
 ]
 
 const formations = [

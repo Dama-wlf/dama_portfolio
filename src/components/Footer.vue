@@ -32,7 +32,7 @@
           <div class="space-y-2 text-gray-400">
             <p>damaanil1504@gmail.com</p>
             <p>+261 32 53 948 38 / +261 34 58 850 81</p>
-            <p>Antsirabe, Madagascar</p>
+            <p>Antananarivo, Madagascar</p>
           </div>
         </div>
       </div>
